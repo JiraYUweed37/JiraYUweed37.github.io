@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav
+{
+    margin-bottom: 5px;
+    margin-left: 5%;
+}
+
+hr
+{
+    width: 100%;
+    background-color: black;
+    border: 1.5px solid black;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+
+body
+{
+    margin: 20px;
+    background: white;
+}
+
+header
+{
+    position: relative;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+header img
+{
+    margin: 0 50px 0 50px;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 3px solid black;
+}
+
+header .brand
+{
+    margin: 0 50px 0 50px;
+    text-align: center;
+}
+
+header .brand .focus
+{
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: #404040;
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+}
+
+header .social
+{
+    margin: 0 50px 0 50px;
+    text-align: center;
+}
+
+header .social a
+{
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    margin-top: 10px;
+    background: #404040;
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+}
+
+header .social a:hover
+{
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    margin-top: 10px;
+    transform: translateY(-2px);
+    background: #737373;
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+}
+
+#next1
+{
+    position: relative;
+    text-align: center;
+    width: 90%;
+    background-color: #8c8c8c;
+    border: 0.5px solid #8c8c8c;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-left: 5%;
+}
+
+.view
+{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.view h3
+{
+    margin: 0 150px 0 150px;
+    text-align: center;
+}
+
+#next2
+{
+    position: relative;
+    text-align: center;
+    width: 90%;
+    background-color: #8c8c8c;
+    border: 0.5px solid #8c8c8c;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-left: 5%;
+}
+
+.view h3 a
+{
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+}
+
+.view h3 a:hover
+{
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: #737373;
+    transform: translateY(-2px);
+}
+
+.shop
+{
+    height: 500px;
+    margin: 0 5% 0 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+}
+
+/*Fashion*/
+
+.pic
+{
+    position: relative;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-bottom: 20px;
+    
+}
+
+.pic p
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px 0 20px;
+    min-width: 300px;
+    min-height: 300px;
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+}
+
+
+/* ดาวจ้า ดาว */
+
+.rating
+{
+    margin: 2px 0 0 -7px;
+    position: absolute;
+    display: flex;
+    transform: rotateY(180deg);
+}
+
+.rating input
+{
+    display: none;
+}
+
+.rating label
+{
+    display: block;
+    cursor: pointer;
+    width: 40px;
+    background: white;
+}
+
+.rating label:before
+{
+    content: '\f005';
+    font-family: fontAwesome;
+    position: relative;
+    display: block;
+    font-size: 35px;
+    color: #ccc;
+}
+
+.rating label:after
+{
+    content: '\f005';
+    font-family: fontAwesome;
+    position: absolute;
+    display: block;
+    font-size: 35px;
+    color: #9999ff;
+    top: 0;
+    opacity: 0;
+    transition: .5s;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.rating label:hover:after,
+.rating label:hover ~ label:after,
+.rating input:checked ~ label:after
+{
+    opacity: 1;
+}
+
+/*ดาวหมดละ*/
+
+/*review*/
+
+.review
+{
+    margin: 0 5% 20px 5%;
+    position: relative;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.side-bar
+{
+    min-width: 280px;
+    min-height: 540px;
+    width: 280px;
+    height: 540px;
+    border: 2px solid black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 30px 0 0;
+    padding: 20px 0 20px 0;
+}
+
+.review .side-bar .rate
+{
+    margin: 150px 0 170px 0;
+}
+
+.review .side-bar i
+{
+    display: inline-block;
+    position:relative;
+    justify-content: center;
+    margin-top: 10px;
+    left: 130%;
+}
+
+.review .side-bar a
+{
+    
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+}
+
+.review .side-bar a:hover
+{
+    transform: translateY(-2px);
+    text-decoration: none;
+}
+
+.review .view-review
+{
+    overflow: scroll;
+    min-width: 1200px;
+    min-height: 540px;
+    width: 1200px;
+    height: 540px;
+    border: 2px solid black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 0;
+    padding: 40px 0 20px 60px
+}
+
+.view-review h3
+{
+    display: flex;
+    justify-content: left;
+}
+
+.pic-ment
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.pic-ment .Rectangle
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 300px;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin: 20px 0 0 0;
+}
+
+.pic-ment .describe
+{
+    width: 500px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 20px 0 0 0;
+}
+
+.pic-ment .ic
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.ic i
+{
+    margin: 20px 30px 100px 0;
+}
+
